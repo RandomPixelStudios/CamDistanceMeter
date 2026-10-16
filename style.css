@@ -68,3 +68,7 @@ footer nav{gap:20px}footer a{text-decoration:none}footer a:hover{color:var(--fg)
 .legal .switch{font-size:.88rem;margin:0 0 40px}
 @media(max-width:860px){.hero .wrap{grid-template-columns:1fr}.phone{width:240px}.grid,.steps{grid-template-columns:1fr}header nav{display:none}.hero{padding:64px 0}section{padding:72px 0}}
 @media(max-width:520px){.stats{grid-template-columns:1fr}}
+.screen img{display:block;width:100%;height:100%;object-fit:cover}
+.screen::after{display:none}
+.showcase{padding:0 0 96px;border-top:0}
+.showcase img{display:block;width:100%;border-radius:28px;border:1px solid var(--line);box-shadow:0 40px 80px -40px rgba(0,0,0,.45)}
