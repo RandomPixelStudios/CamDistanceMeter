@@ -1,4 +1,4 @@
-:root{--bg:#07080b;--bg2:#0f1116;--fg:#f2f3f5;--muted:#8d93a1;--line:#1c1f27;--accent:#6d8fff;--accent2:#2ee6c6;--glow:rgba(109,143,255,.22);color-scheme:dark}
+:root{--bg:#000000;--bg2:#0a0a0a;--fg:#ffffff;--muted:#8a8a8a;--line:#1f1f1f;--accent:#ffffff;--accent2:#d4d4d8;--glow:rgba(255,255,255,.07);color-scheme:dark}
 *{box-sizing:border-box}html{scroll-behavior:smooth}
 body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.65 "Inter",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;-webkit-font-smoothing:antialiased}
 a{color:inherit}
@@ -13,15 +13,15 @@ nav{display:flex;gap:28px}nav a{color:var(--muted);text-decoration:none;font-siz
 .btn.ghost{background:transparent;color:var(--fg);border:1px solid var(--line)}
 .btn.sm{height:38px;padding:0 16px;font-size:.88rem;border-radius:10px}
 .hero{position:relative;overflow:hidden;padding:96px 0 80px}
-.hero::before{content:"";position:absolute;inset:-40% -20% auto;height:900px;background:radial-gradient(closest-side,var(--glow),transparent),radial-gradient(closest-side at 70% 40%,color-mix(in srgb,var(--accent2) 14%,transparent),transparent);pointer-events:none}
+.hero::before{content:"";position:absolute;inset:-40% -20% auto;height:900px;background:radial-gradient(closest-side,var(--glow),transparent),radial-gradient(closest-side at 70% 40%,rgba(255,255,255,.06),transparent);pointer-events:none}
 .hero .wrap{position:relative;display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center}
 .eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:.8rem;font-weight:500;color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:6px 14px;background:var(--bg2)}
-.eyebrow i{width:6px;height:6px;border-radius:50%;background:var(--accent2);box-shadow:0 0 10px var(--accent2)}
+.eyebrow i{width:6px;height:6px;border-radius:50%;background:var(--accent2)}
 h1{font-size:clamp(2.6rem,6vw,4.4rem);line-height:1.02;letter-spacing:-.045em;font-weight:700;margin:22px 0 20px}
-.grad{background:linear-gradient(100deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.grad{color:var(--muted)}
 .lead{font-size:1.15rem;color:var(--muted);max-width:520px;margin:0 0 34px}
 .cta{display:flex;gap:12px;flex-wrap:wrap}
-.phone{justify-self:center;width:280px;aspect-ratio:9/19;border-radius:44px;padding:10px;background:linear-gradient(160deg,#2a2d36,#0b0c10);box-shadow:0 50px 100px -30px rgba(0,0,0,.5),inset 0 0 0 1px rgba(255,255,255,.08)}
+.phone{justify-self:center;width:280px;aspect-ratio:9/19;border-radius:44px;padding:10px;background:linear-gradient(160deg,#2a2a2a,#0a0a0a);box-shadow:0 50px 100px -30px rgba(0,0,0,.5),inset 0 0 0 1px rgba(255,255,255,.08)}
 .screen{position:relative;height:100%;border-radius:36px;overflow:hidden;background:radial-gradient(120% 70% at 50% 30%,#3a4660,#141821 60%,#090a0e)}
 .screen::after{content:"";position:absolute;inset:auto 0 0;height:45%;background:linear-gradient(transparent,rgba(0,0,0,.55))}
 .reticle{position:absolute;left:50%;top:42%;width:96px;height:96px;transform:translate(-50%,-50%);border:1.5px solid rgba(255,255,255,.85);border-radius:50%}
@@ -45,7 +45,7 @@ h2{font-size:clamp(1.9rem,4vw,2.8rem);letter-spacing:-.035em;line-height:1.1;mar
 .step{padding:28px;border:1px solid var(--line);border-radius:20px;background:var(--bg2)}
 .step .n{font-size:.8rem;font-weight:600;color:var(--muted);font-variant-numeric:tabular-nums}
 .step h3{margin:14px 0 8px;font-size:1.1rem}.step p{margin:0;color:var(--muted);font-size:.95rem}
-.callout{margin-top:24px;padding:20px 24px;border-radius:16px;border:1px solid var(--line);color:var(--muted);font-size:.93rem;background:linear-gradient(90deg,color-mix(in srgb,var(--accent2) 8%,transparent),transparent)}
+.callout{margin-top:24px;padding:20px 24px;border-radius:16px;border:1px solid var(--line);color:var(--muted);font-size:.93rem;background:var(--bg2)}
 .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;text-align:center}
 .stats b{display:block;font-size:2.6rem;letter-spacing:-.04em}.stats span{color:var(--muted);font-size:.9rem}
 .faq{max-width:760px}
